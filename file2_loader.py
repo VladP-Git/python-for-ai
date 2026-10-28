@@ -13,7 +13,7 @@ from loaders import loading_animation
 load_dotenv()
 
 api_key = os.getenv("GEMINI_API_KEY")
-print(api_key[:10])
+# print(api_key[:10])
 genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel("gemini-3.8-flash")
